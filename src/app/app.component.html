@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <md-toolbar color="primary">
+      <button style="margin-right:20px;" md-icon-button [mdMenuTriggerFor]="menu">
+        <md-icon>menu</md-icon>
+      </button>
+          <span class="section-title">Smart Ticket Visualizer </span>
+          <span class="section-chapter"> <span class="title-separator"> –</span> Ticket Aging</span>
+          <span class="spacer"></span>
+
+
+  </md-toolbar>
+  <md-tab-group md-stretch-tabs>
+      <md-tab label="Pivot"></md-tab>
+      <md-tab label="Chart"></md-tab>
+  </md-tab-group>
+  <div id="pivot">
+    
+  </div>
+</div>

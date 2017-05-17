@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {PivotWrapper} from './pivotwrapper'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
