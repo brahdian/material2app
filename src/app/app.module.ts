@@ -6,10 +6,11 @@ import { MaterialModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import {PivotWrapper} from './pivot.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, PivotWrapper
   ],
   imports: [
     BrowserModule,
@@ -20,6 +21,6 @@ import { AppComponent } from './app.component';
     MaterialModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, PivotWrapper]
 })
 export class AppModule { }

@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
-import {PivotWrapper} from './pivotwrapper'
+import { Component,ElementRef,Inject} from '@angular/core';
+
+declare var jQuery: any;
+import {PivotWrapper} from './pivot.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'app works!';
-}
+export class AppComponent {}
