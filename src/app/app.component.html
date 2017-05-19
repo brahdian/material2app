@@ -3,17 +3,25 @@
       <button style="margin-right:20px;" md-icon-button >
         <md-icon>menu</md-icon>
       </button>
-          <span class="section-title">Smart Ticket Visualizer </span>
-          <span class="section-chapter"> <span class="title-separator"> –</span> Ticket Aging</span>
+          <span class="section-title">Smart Ticket Visualizer</span>
+          <span class="section-chapter"> <span class="title-separator">&nbsp;–</span> Ticket Aging</span>
           <span class="spacer"></span>
   </md-toolbar>
   <md-tab-group md-stretch-tabs>
-      <md-tab label="Pivot"></md-tab>
-      <md-tab label="Chart"></md-tab>
+      <md-tab label="Pivot (Status wise view)">
+        <div style="padding:30px;width:590px;margin-left:340px;" >
+          <md-card>
+            <app-pivot></app-pivot>
+          </md-card>
+        </div>
+      </md-tab>
+      <md-tab label="Pivot (Owner group view)">
+        <div style="padding:30px;width:670px;margin-left:320px;" >
+          <md-card>
+            <app-pivotres></app-pivotres>
+          </md-card>
+        </div>
+      </md-tab>
   </md-tab-group>
-  <div style="padding:30px;">
-    <md-card>
-      <app-pivot></app-pivot>
-    </md-card>
-  </div>
+
 </div>

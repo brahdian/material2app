@@ -10,11 +10,11 @@ import 'pivottable/dist/pivot.min.css';
 
 
 @Component({
-  selector: 'app-pivot',
-  template: `<div id="pivot"></div>`
+  selector: 'app-pivotres',
+  template: `<div id="pivotres"></div>`
 })
 
-export class PivotWrapper implements AfterViewInit{
+export class PivotWrapperres implements AfterViewInit{
 
     private el: ElementRef;
 
@@ -37,7 +37,7 @@ export class PivotWrapper implements AfterViewInit{
 
         //the below id should be on your html element like div for the pivot
         //per the exmapmle in thepivot docs
-        var targetElement = inst.find('#pivot');
+        var targetElement = inst.find('#pivotres');
 
         if (!targetElement){
             console.log('cant find the pivot element');
@@ -520,7 +520,7 @@ export class PivotWrapper implements AfterViewInit{
            "Owner": ""
          }
         ] ,{
-                rows: ["Status"],
+                rows: ["Status","Owner Group"],
                 cols: ["Bucket","Age"]
             });
     }

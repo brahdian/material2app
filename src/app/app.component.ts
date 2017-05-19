@@ -2,6 +2,7 @@ import { Component,ElementRef,Inject} from '@angular/core';
 
 declare var jQuery: any;
 import {PivotWrapper} from './pivot.component';
+import {PivotWrapperres} from './pivotres.component';
 
 @Component({
   selector: 'app-root',
